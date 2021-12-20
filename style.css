@@ -1,0 +1,477 @@
+html {
+    background-image: url(background.png);
+    /* background-size: 100% 90%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0 3%;
+}
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url(./fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: AvenirNext;
+    src: url(./fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+    font-family: AvenirNext-Bold;
+    src: url(./fonts/AvenirNextLTPro-Bold.otf);
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 24px;
+}
+
+.logo {
+    font-family: "AvenirNext-Bold";
+    font-size: 36px;
+}
+
+
+
+.logo:hover {
+    text-decoration: none;
+}
+
+nav {
+    @media screen and (max-width: 810px) {
+        
+    }
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
+}
+
+.nav-link {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+}
+
+.login {
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    border-color: white;
+    padding: 5px 10px;
+    font-family: "AvenirNext-Bold";
+    font-size: 20px;
+}
+
+.login:hover {
+    background-color: #2C99ED;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.login:active {
+    background-color: transparent;
+}
+
+#hamburgerIcon {
+    display: none;
+    cursor: pointer;
+}
+
+#closeIcon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 15%;
+    top: 5%;
+}
+
+#mobileDropdown {
+    display: none;
+}
+
+.mobile-dropdown-box {
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+
+.hero-textbox {
+    width: 555px;
+    margin-left: 10%;
+}
+
+.hero-text {
+    font-family: "AvenirNext-Bold";
+    font-size: 72px;
+    overflow-wrap: break-word;
+}
+
+.hero-subtext {
+    opacity: 75%;
+    font-size: 22px;
+}
+
+.form-box {
+    margin-left: 150px;
+    margin-right: 10%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* color: red; */
+    color: white;
+    font-size: 18px;
+    opacity: 1; /* Firefox */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    width: 550px;
+}
+
+#su4f {
+    letter-spacing: 2px;
+    font-family: "AvenirNext";
+    text-align: center;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.form-input {
+    /* background-color: gray; */
+    background-color: rgba(130,130,130, 0.3);
+    border-left-color: white;
+    border-right-color: white;
+    border-width: 2px;
+    border-bottom-width: 0px;
+    border-color: white;
+    padding: 20px 50px 20px 15px;
+}
+
+#top {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#bottom {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#closedEye {
+    display: none;
+    position: absolute;
+    left: 90%;
+    bottom: 29%;
+    cursor: pointer;
+}
+
+#openEye {
+    display: block;
+    position: absolute;
+    left: 90%;
+    bottom: 29%;
+    cursor: pointer;
+}
+
+.form-submit {
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border: none;
+    background-color: #2C99ED;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    transition: all .2s ease-in;
+    position: relative;
+}
+
+.form-submit:hover {
+    background-color: #0d6fbb;
+    cursor: pointer;
+}
+
+.rightarrow {
+    position: absolute;
+    right: 40em;
+    top: 5em;
+}
+
+.agreement {
+    color: #9B9B9B;
+    text-align: center;
+}
+
+#tos {
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: absolute; */
+    /* bottom: 0; */
+    font-size: 14px;
+}
+
+.footer-link {
+    font-family: "AvenirNext";
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+#mobile-copyright {
+    display: none;
+}
+
+/* MOBILE!!!! */
+@media screen and (max-width: 450px) {
+    html {
+        background-size: 400% 105%;
+        background-repeat: no-repeat;
+        background-position-x: -550px;
+    }
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    header {
+        margin-top: 15px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    nav {
+        display: none;
+    }
+    .login {
+        display: none;
+    }
+    #hamburgerIcon {
+        display: block;
+    }
+    #closeIcon {
+        display: block;
+    }
+    #mobileDropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(34, 34, 34);
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        /* align-items: center; */
+        text-align: center;
+    }
+    .mobile-dropdown-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .nav-link-mobile {
+        font-size: 20px;
+        margin-top: 50px;
+        font-family: "AvenirNext";
+        letter-spacing: 2px;
+    }
+    .hero-box {
+        flex-direction: column;
+        margin-top: 75px;
+    }
+    .hero-textbox {
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .hero-text {
+        font-size: 36px;
+    }
+    .hero-subtext {
+        overflow-wrap: break-word;
+        font-size: 18px;
+    }
+    .form-box {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 25px;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+    #closedEye {
+        left: 88%;
+    }
+    #openEye {
+        left: 88%;
+    }
+    .agreement {
+        font-size: 16px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .footer-link {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    #desktop-copyright {
+        display: none;
+    }
+    #mobile-copyright {
+        display: block;
+    }
+}
+
+/* TABLETS!! */
+@media screen and (min-width: 451px) and (max-width: 1120px) {
+    html {
+        background-size: 250% 105%;
+        background-repeat: no-repeat;
+        background-position-x: -550px;
+    }
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    header {
+        margin-top: 30px;
+    }
+    .logo {
+        font-size: 36px;
+    }
+    nav {
+        display: none;
+    }
+    .login {
+        display: none;
+    }
+    #hamburgerIcon {
+        display: block;
+    }
+    #closeIcon {
+        display: block;
+    }
+    #mobileDropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(34, 34, 34);
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        /* align-items: center; */
+        text-align: center;
+    }
+    .mobile-dropdown-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .nav-link-mobile {
+        font-size: 20px;
+        margin-top: 50px;
+        font-family: "AvenirNext";
+        letter-spacing: 2px;
+    }
+    .hero-box {
+        flex-direction: column;
+        margin-top: 75px;
+    }
+    .hero-textbox {
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .hero-text {
+        font-size: 54px;
+    }
+    .hero-subtext {
+        overflow-wrap: break-word;
+        font-size: 18px;
+    }
+    .form-box {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 25px;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+    #closedEye {
+        left: 93%;
+    }
+    #openEye {
+        left: 93%;
+    }
+    .agreement {
+        font-size: 16px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .footer-link {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    #desktop-copyright {
+        display: none;
+    }
+    #mobile-copyright {
+        display: block;
+    }
+}
